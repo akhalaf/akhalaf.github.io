@@ -1,0 +1,18 @@
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+<script>
+        $(document).ready(function (){
+         if(navigator.userAgent.toLowerCase().indexOf("android") > -1){
+			 try {
+	             window.location.href = 'market://details?id=com.brightapplications.crazy_car';
+			 }
+			 catch(err) {
+	             window.location.href = 'http://play.google.com/store/apps/details?id=com.brightapplications.crazy_car';
+			 }
+         } 
+		 else //if (navigator.userAgent.toLowerCase().indexOf("iphone") > -1)
+		 {
+             window.location.href = 'http://itunes.apple.com/sa/app/id959281141';
+         }
+        });
+</script>
